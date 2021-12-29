@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "movie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "vertical_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "horizontal_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "stillcut_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "plot": {
+      "type": "richtext",
+      "required": true
+    },
+    "production_intention": {
+      "type": "richtext",
+      "required": true
+    },
+    "filming_equipment": {
+      "type": "string",
+      "required": true
+    },
+    "budget": {
+      "type": "integer",
+      "required": true
+    },
+    "movie_director": {
+      "type": "string",
+      "required": true
+    },
+    "movie_actors": {
+      "type": "string",
+      "required": true
+    },
+    "movie_photography_director": {
+      "type": "string"
+    },
+    "movie_sound_director": {
+      "type": "string",
+      "required": true
+    },
+    "production_period": {
+      "type": "string",
+      "required": true
+    },
+    "production_year": {
+      "type": "string"
+    }
+  }
+}
