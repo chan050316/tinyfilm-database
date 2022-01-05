@@ -3,11 +3,11 @@ module.exports = ({ env }) => ({
     config: {
       provider: "aws-s3",
       providerOptions: {
-        accessKeyId: env("AKIAQAHIO7PFJBPDF2GS"),
-        secretAccessKey: env("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"),
+        accessKeyId: env("AWS_ACCESS_KEY_ID"),
+        secretAccessKey: env("AWS_SECRET_ACCESS_KEY"),
         region: env("ap-northeast-2"),
         params: {
-          Bucket: env("tinyfilm-image"),
+          Bucket: "tinyfilm-image",
         },
       },
     },
